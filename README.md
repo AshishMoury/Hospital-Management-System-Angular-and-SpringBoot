@@ -1,5 +1,19 @@
-# Hospital-Management-System-Angular-and-SpringBoot
-A full-stack web application built using Spring Boot (Backend) and Angular (Frontend) to streamline hospital operations. The system manages patients, medicines, and appointments efficiently with a user-friendly interface and secure data handling.
+🏥 Hospital Management System - Angular and Spring Boot
+A full-stack web application built using Spring Boot (Backend) and Angular (Frontend) to streamline hospital operations. The system efficiently manages patients, medicines, and appointments with a user-friendly interface and secure data handling.
+
+📋 Table of Contents
+Technologies Used
+Modules
+1. Patient Management
+2. Medicine Management
+3. Appointment Management
+API Endpoints
+Patient
+Medicine
+Appointment
+How to Run
+Screenshots
+Contributing
 
 🛠 Technologies Used
 🌐 Frontend:
@@ -16,43 +30,73 @@ MySQL
 📦 Modules
 🩺 1. Patient Management
 Add, view, update, and delete patient details.
-Manage patient records with fields like Id, name, age, blood, prescription, dose, fees, urgency.
+Manage patient records with fields like ID, name, age, blood group, prescription, dose, fees, urgency.
 Search patients by name or ID.
+
 💊 2. Medicine Management
-Manage medicine details including id, nameand stock availability.
-CRUD operations for medicine inventory.
+Manage medicine details including ID, name, and stock availability.
+Perform CRUD operations for medicine inventory.
 Search and filter medicines.
+
 📅 3. Appointment Management
 Schedule, update, and cancel appointments.
 View appointments by doctor, date, or patient.
-Handle appointment statuses (Pending, Confirmed, Completed, Cancelled).
+Handle appointment statuses: Pending, Confirmed, Completed, Cancelled.
 
 🌐 API Endpoints
-Patient:
-POST /api/v1/patients — Create a new patient
-GET /api/v1/patients— Get all patients
-GET /api/v1/patients/{id} — Get patient by ID
-PUT /api/v1/patients/{id} — Update patient details
-DELETE /api/v1/patients/{id} — Delete patient
+🩺 Patient:
+Create a new patient:
+POST /api/v1/patients
+Get all patients:
+GET /api/v1/patients
+Get patient by ID:
+GET /api/v1/patients/{id}
+Update patient details:
+PUT /api/v1/patients/{id}
+Delete patient:
+DELETE /api/v1/patients/{id}
 
-Medicine:
-POST /api/v2/medicines — Add new medicine
-GET /api/v2/medicines — Get all medicines
-GET /api/v2/medicines/{id} — Get medicines by ID
-PUT /api/v2/medicines/{id} — Update medicine details
-DELETE /api/v2/medicines/{id} — Delete medicine
+💊 Medicine:
+Add new medicine:
+POST /api/v2/medicines
+Get all medicines:
+GET /api/v2/medicines
+Get medicine by ID:
+GET /api/v2/medicines/{id}
+Update medicine details:
+PUT /api/v2/medicines/{id}
+Delete medicine:
+DELETE /api/v2/medicines/{id}
 
-Appointment:
-POST /api/v3/appointments — Create appointment
-GET /api/v3/appointments — Get all appointments
-GET /api/v1/appointments/{id} — Get apppointments by ID
-PUT /api/v3/appointments/{id} — Update appointment status
-DELETE /api/v3/appointments/{id} — Cancel appointment
+📅 Appointment:
+Create appointment:
+POST /api/v3/appointments
+Get all appointments:
+GET /api/v3/appointments
+Get appointment by ID:
+GET /api/v3/appointments/{id}
+Update appointment status:
+PUT /api/v3/appointments/{id}
+Cancel appointment:
+DELETE /api/v3/appointments/{id}
 
 ▶️ How to Run
-1.Start the backend:
-  mvn spring-boot:run
+⚙️ Backend:
+Navigate to the backend directory:
+cd backend
 
-2.Start the frontend:
- ng serve
-Access the app: http://localhost:4200
+Install dependencies and run:
+mvn clean install
+mvn spring-boot:run
+
+🌐 Frontend:
+Navigate to the frontend directory:
+
+cd frontend
+Install dependencies and run:
+
+npm install
+ng serve
+Access the app:
+🖥 http://localhost:4200
+
